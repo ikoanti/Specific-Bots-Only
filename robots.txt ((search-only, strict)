@@ -1,0 +1,38 @@
+# robots.txt — Allowlist mode (updated: 2025-08-12)
+# Docs: robots.txt is advisory only; use server/WAF rules to block bad bots truly.
+
+# Google (Search + misc fetchers)
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+User-agent: GoogleOther
+Allow: /
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+User-agent: AdIdxBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Optional regionals (uncomment if you want them)
+# User-agent: YandexBot
+# Allow: /
+# User-agent: Slurp
+# Allow: /
+
+# Block everything else
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.example.com/sitemap.xml
